@@ -12,4 +12,13 @@ function displayQuestion() {
     btn.value = choices[i];
     }
 }
+// Vérifie si la réponse sélectionnée par l'utilisateur est correcte ou non
+function checkAnswer(button) {
+    if (button.value === correctAnswer) {
+        document.getElementById('result').innerHTML = "Correcte!";
+    } else {
+        document.getElementById('result').innerHTML = "Faux!";
+    }
+}
+
 displayQuestion();
