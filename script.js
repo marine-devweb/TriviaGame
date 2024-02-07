@@ -19,6 +19,10 @@ function checkAnswer(button) {
     } else {
         document.getElementById('result').innerHTML = "Faux!";
     }
+    // Éléments désactivés après un clique
+    for(let i = 1; i <= 4; i++){
+        document.getElementById(`choice${i}`).disabled = true;
+    }
 }
 
 displayQuestion();
